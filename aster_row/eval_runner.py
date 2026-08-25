@@ -31,16 +31,26 @@ def run_case(agent: SupportAgent, case: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def run_suite(case_ids: list[str] | None = None) -> dict[str, Any]:
+def run_suite(case_ids: list[str] | None = None, verbose: bool = True) -> dict[str, Any]:
     agent = SupportAgent()
+    cases = [c for c in load_cases() if not case_ids or c["id"] in case_ids]
+    if verbose:
+        print(f"Running Aster & Row Evaluation Suite ({len(cases)} cases)...\n")
     results = []
-    for case in load_cases():
-        if case_ids and case["id"] not in case_ids:
-            continue
+    for idx, case in enumerate(cases, 1):
+        if verbose:
+            print(f"[{idx}/{len(cases)}] Running '{case['id']}' ({case['category']})... ", end="", flush=True)
         run = run_case(agent, case)
         graded = evaluate_case(case, run)
         graded["answer"] = run["answer"]
         results.append(graded)
+        if verbose:
+            mark = "PASS" if graded["passed"] else "FAIL"
+            print(f"[{mark}]", flush=True)
+    if verbose:
+        print()
+
+
 
     by_category: dict[str, dict[str, int]] = {}
     for row in results:

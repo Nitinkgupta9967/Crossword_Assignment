@@ -24,11 +24,9 @@ python -m aster_row.eval_cli
 
 ## 📹 Demo Video & Walkthrough
 
-<video src="https://github.com/Nitinkgupta9967/Crossword_Assignment/raw/main/crossword_assignmnt_demo.mp4" controls="controls" style="max-width: 100%; height: auto;">
-  Your browser does not support the video tag.
-</video>
+![Aster & Row AI Support Agent Demo](demo.gif)
 
-https://github.com/Nitinkgupta9967/Crossword_Assignment/raw/main/crossword_assignmnt_demo.mp4
+> 🎥 **Video File**: `crossword_assignmnt_demo.mp4` / `demo.gif`
 
 ### Demonstrated Capabilities
 1. **Knowledge Base Query with Citations**: Answers return window queries while citing official policy headings (`01-returns-policy-current.md — Standard return window`).
@@ -100,7 +98,8 @@ Crossword_Assignment/
 │   ├── visible-cases.json   # Candidate evaluation cases
 │   └── original-cases.json  # Regression evaluation cases
 ├── knowledge-base/      # Official policy & product markdown files
-├── crossword_assignmnt_demo.mp4 # Demo Video
+├── demo.gif             # Inline Animated Demo Video
+├── crossword_assignmnt_demo.mp4 # Raw Source Video
 ├── README.md
 ├── requirements.txt
 └── .env.example

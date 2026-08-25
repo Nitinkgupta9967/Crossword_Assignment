@@ -22,6 +22,19 @@ python -m aster_row.eval_cli
 
 ---
 
+## 📹 Demo Video & Walkthrough
+
+> 🎥 **Demo Video Link**: [Watch Demo Video / GIF](#) *(Include your Loom, YouTube, or embedded `demo.gif` link here)*
+
+### Demonstrated Capabilities
+1. **Knowledge Base Query with Citations**: Answers return window queries while citing official policy headings (`01-returns-policy-current.md — Standard return window`).
+2. **Order Status Lookup**: Case-insensitive lookup (`ord-1007` -> `ORD-1007`) returning tracking details while withholding customer email, address, and risk scores.
+3. **Multi-Turn Conversation**: Retains session state on follow-up questions (*"Do you ship internationally?"* followed by *"What about Canada?"*).
+4. **Safe Abstention & Human Handoff**: Refuses unverified claims (e.g., vegan material guarantee) and flags active source conflicts (e.g., Breeze Tumbler dishwasher safety) with a human handoff recommendation.
+5. **Automated Evaluation Suite Execution**: Live streaming test execution running `python -m aster_row.eval_cli` (20/20 PASS).
+
+---
+
 ## 🚀 Quickstart & Setup
 
 ### 1. Prerequisites
@@ -63,7 +76,7 @@ ANTHROPIC_MODEL=claude-sonnet-4-5-20250929
 ## 🏛️ System Architecture
 
 ```text
-ai-agent-intern-test/
+Crossword_Assignment/
 ├── aster_row/
 │   ├── agent.py          # Core agent coordinator, system prompt rules, & post-processing
 │   ├── retrieve.py       # BM25 retriever + document precedence scoring & conflict detection

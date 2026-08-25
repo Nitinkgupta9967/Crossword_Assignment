@@ -24,7 +24,9 @@ python -m aster_row.eval_cli
 
 ## 📹 Demo Video & Walkthrough
 
-> 🎥 **Demo Video Link**: [Watch Demo Video / GIF](#) *(Include your Loom, YouTube, or embedded `demo.gif` link here)*
+🎥 **[Watch Demo Video (crossword_assignmnt_demo.mp4)](crossword_assignmnt_demo.mp4)**
+
+https://user-images.githubusercontent.com/crossword_assignmnt_demo.mp4
 
 ### Demonstrated Capabilities
 1. **Knowledge Base Query with Citations**: Answers return window queries while citing official policy headings (`01-returns-policy-current.md — Standard return window`).
@@ -96,6 +98,7 @@ Crossword_Assignment/
 │   ├── visible-cases.json   # Candidate evaluation cases
 │   └── original-cases.json  # Regression evaluation cases
 ├── knowledge-base/      # Official policy & product markdown files
+├── crossword_assignmnt_demo.mp4 # 5.7MB Demo Video
 ├── README.md
 ├── requirements.txt
 └── .env.example

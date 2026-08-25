@@ -26,6 +26,8 @@ python -m aster_row.eval_cli
 
 ![Aster & Row AI Support Agent Demo](output.gif)
 
+> 🎥 **Full Video Reference**: If the preview GIF plays too fast, you can refer to the full **[demo.mp4](demo.mp4)** video file directly as well.
+
 ### Demonstrated Capabilities
 1. **Knowledge Base Query with Citations**: Answers return window queries while citing official policy headings (`01-returns-policy-current.md — Standard return window`).
 2. **Order Status Lookup**: Case-insensitive lookup (`ord-1007` -> `ORD-1007`) returning tracking details while withholding customer email, address, and risk scores.
@@ -96,7 +98,8 @@ Crossword_Assignment/
 │   ├── visible-cases.json   # Candidate evaluation cases
 │   └── original-cases.json  # Regression evaluation cases
 ├── knowledge-base/      # Official policy & product markdown files
-├── output.gif           # Demo Video Animation (35.7 MB)
+├── demo.mp4              # Full Video Demonstration (5.7 MB)
+├── output.gif           # Inline Animated GIF Preview
 ├── README.md
 ├── requirements.txt
 └── .env.example
